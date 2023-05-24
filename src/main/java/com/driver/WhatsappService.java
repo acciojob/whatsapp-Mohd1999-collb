@@ -126,15 +126,7 @@ public class WhatsappService {
         // This is a bonus problem and does not contains any marks
         // Find the Kth latest message between start and end (excluding start and end)
         List<Message> msgs = whatsappRepository.getAllMessages();
-        /*
-         * if(d1.compareTo(d2) > 0) {
-         * System.out.println("Date 1 occurs after Date 2");
-         * } else if(d1.compareTo(d2) < 0) {
-         * System.out.println("Date 1 occurs before Date 2");
-         * } else if(d1.compareTo(d2) == 0) {
-         * System.out.println("Both dates are equal");
-         * }
-         */
+    
         List<Message> myMsgs = new ArrayList<>();
         for (Message msg : msgs) {
             if (msg.getTimestamp().compareTo(start) > 0 && msg.getTimestamp().compareTo(end) < 0) {
@@ -149,8 +141,5 @@ public class WhatsappService {
         // 1st latest n-1
         // 2nd latest n-2
         return myMsgs.get(myMsgs.size() - k).getContent();
-        // Collections.sort(myMsgs);
-        // If the number of messages between given time is less than K, throw "K is
-        // greater than the number of messages" exception
     }
 }

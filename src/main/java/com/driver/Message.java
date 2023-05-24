@@ -1,14 +1,3 @@
-// package com.driver;
-
-// import java.util.Date;
-
-// public class Message {
-//     private int id;
-//     private String content;
-//     private Date timestamp;
-
-// }
-
 package com.driver;
 
 import java.time.LocalDateTime;
@@ -23,7 +12,6 @@ public class Message implements Comparable<Message>{
         this.id = id;
         this.content = content;
         this.timestamp = new Date();
-        // LocalDateTime.now();
     }
 
     public int getId() {

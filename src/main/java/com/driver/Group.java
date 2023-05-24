@@ -1,20 +1,7 @@
-// package com.driver;
-
-// public class Group {
-//     private String name;
-//     private int numberOfParticipants;
-
-// }
-
 package com.driver;
-
-// import lombok.Getter;
-// import lombok.Setter;
 
 import java.util.Objects;
 
-// @Getter
-// @Setter
 public class Group {
     private String name;
     private int numberOfParticipants;

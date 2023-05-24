@@ -1,20 +1,9 @@
-// package com.driver;
-
-// public class User {
-//     private String name;
-//     private String mobile;
-// }
-
 package com.driver;
 
 import com.fasterxml.jackson.annotation.JsonAnyGetter;
-// import lombok.Getter;
-// import lombok.Setter;
 
 import java.util.Objects;
 
-// @Getter
-// @Setter
 public class User {
     private String name;
     private String mobile;
